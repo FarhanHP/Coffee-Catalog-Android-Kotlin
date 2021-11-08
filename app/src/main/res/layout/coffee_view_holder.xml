@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  android:id="@+id/root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_margin="8dp"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <ImageView
+    android:id="@+id/coffeeThumbnail"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/coffee_image"
+    android:adjustViewBounds="true"
+    android:scaleType="fitCenter"/>
+
+  <LinearLayout
+    android:layout_marginLeft="8dp"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:id="@+id/coffeeName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      android:textStyle="bold" />
+
+    <TextView
+      android:justificationMode="inter_word"
+      android:id="@+id/coffeeDescription"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  </LinearLayout>
+</LinearLayout>
